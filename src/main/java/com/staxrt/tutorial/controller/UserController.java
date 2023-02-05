@@ -59,6 +59,11 @@ public class UserController {
    * @param user the user
    * @return the user
    */
+
+  @GetMapping("/")
+  public String index () {
+    return "intex";
+  }
   @PostMapping("/users")
   public User createUser(@Valid @RequestBody User user) {
     // System.out.println(user);
